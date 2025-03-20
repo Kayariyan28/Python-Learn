@@ -239,7 +239,7 @@ All materials are designed as:
 
 2. Navigate to the first realm:
    ```bash
-   cd python-journey/realm_1/module_1
+   cd Python-Learn/Module 1
    ```
 
 3. Open the notebooks in Jupyter or upload to Google Colab to begin your journey.
