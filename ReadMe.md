@@ -234,7 +234,7 @@ All materials are designed as:
 
 1. Clone this repository:
    ```bash
-   [git clone https://github.com/yourusername/python-journey.git](https://github.com/Kayariyan28/Python-Learn.git)
+   (https://github.com/Kayariyan28/Python-Learn.git)
    ```
 
 2. Navigate to the first realm:
