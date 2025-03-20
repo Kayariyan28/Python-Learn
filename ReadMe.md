@@ -3,7 +3,9 @@
 ![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-
+@Author: Karan Chandra Dey
+MailID: karandey3@outlook.com
+Linkedin: https://www.linkedin.com/in/karan-chandra-dey-23392b1b9 
 ## 🚀 Overview
 
 **Python Journey** is a comprehensive, multi-level Python curriculum that combines structured learning with gamification principles and experiential learning. The curriculum is designed to be accessible across all ages, with specific adaptations for children, teenagers, and adults.
