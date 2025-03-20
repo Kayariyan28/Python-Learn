@@ -1,0 +1,279 @@
+# Python Control Flow Cheatsheet
+
+This cheatsheet provides a quick reference for Python's control flow statements covered in Module 1 of Python Journey.
+
+## Conditional Statements
+
+### Basic if Statement
+```python
+if condition:
+    # Code to execute if condition is True
+```
+
+### if-else Statement
+```python
+if condition:
+    # Code to execute if condition is True
+else:
+    # Code to execute if condition is False
+```
+
+### if-elif-else Statement
+```python
+if condition1:
+    # Code to execute if condition1 is True
+elif condition2:
+    # Code to execute if condition1 is False and condition2 is True
+elif condition3:
+    # Code to execute if condition1 and condition2 are False and condition3 is True
+else:
+    # Code to execute if all conditions are False
+```
+
+### Nested if Statements
+```python
+if outer_condition:
+    # Code for outer condition
+    if nested_condition:
+        # Code for nested condition
+    else:
+        # Code for nested else
+else:
+    # Code for outer else
+```
+
+### Conditional Expression (Ternary Operator)
+```python
+# value_if_true if condition else value_if_false
+result = "Even" if number % 2 == 0 else "Odd"
+```
+
+## Comparison Operators
+
+| Operator | Description | Example |
+|----------|-------------|---------|
+| `==` | Equal to | `a == b` |
+| `!=` | Not equal to | `a != b` |
+| `>` | Greater than | `a > b` |
+| `<` | Less than | `a < b` |
+| `>=` | Greater than or equal to | `a >= b` |
+| `<=` | Less than or equal to | `a <= b` |
+
+## Logical Operators
+
+| Operator | Description | Example |
+|----------|-------------|---------|
+| `and` | True if both operands are true | `a and b` |
+| `or` | True if either operand is true | `a or b` |
+| `not` | True if operand is false | `not a` |
+
+## For Loops
+
+### Basic for Loop
+```python
+for item in iterable:
+    # Code to execute for each item
+```
+
+### for Loop with range()
+```python
+# range(start, stop, step)
+for i in range(5):          # 0, 1, 2, 3, 4
+    print(i)
+
+for i in range(1, 6):       # 1, 2, 3, 4, 5
+    print(i)
+
+for i in range(0, 10, 2):   # 0, 2, 4, 6, 8
+    print(i)
+
+for i in range(10, 0, -1):  # 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+    print(i)
+```
+
+### for Loop with enumerate()
+```python
+# Get both index and value
+for index, value in enumerate(iterable):
+    print(f"Index {index}: {value}")
+
+# Start enumeration at a different number
+for index, value in enumerate(iterable, start=1):
+    print(f"Item {index}: {value}")
+```
+
+### Nested for Loops
+```python
+for outer_item in outer_iterable:
+    for inner_item in inner_iterable:
+        # Code to execute for each inner_item for each outer_item
+```
+
+## While Loops
+
+### Basic while Loop
+```python
+while condition:
+    # Code to execute while condition is True
+```
+
+### while Loop with Counter
+```python
+counter = 0
+while counter < 5:
+    print(counter)
+    counter += 1  # Don't forget to update the counter!
+```
+
+### Infinite while Loop
+```python
+while True:
+    # This will run forever unless a break statement is encountered
+    if exit_condition:
+        break
+```
+
+## Loop Control Statements
+
+### break Statement
+```python
+for item in iterable:
+    if condition:
+        break  # Exit the loop immediately
+```
+
+### continue Statement
+```python
+for item in iterable:
+    if condition:
+        continue  # Skip to the next iteration
+    # This code won't execute if continue was triggered
+```
+
+### pass Statement
+```python
+for item in iterable:
+    if condition:
+        pass  # Does nothing, acts as a placeholder
+    # Code continues normally
+```
+
+### else Clause with Loops
+```python
+# Executes after loop completes normally (no break)
+for item in iterable:
+    # Loop body
+else:
+    # Executes if the loop completed without a break
+
+while condition:
+    # Loop body
+else:
+    # Executes if the loop completed without a break
+```
+
+## Common Control Flow Patterns
+
+### Input Validation
+```python
+while True:
+    user_input = input("Enter a number between 1 and 10: ")
+    try:
+        num = int(user_input)
+        if 1 <= num <= 10:
+            break  # Valid input, exit the loop
+        else:
+            print("Number must be between 1 and 10")
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+```
+
+### Finding Items in a Collection
+```python
+found = False
+for item in collection:
+    if item == target:
+        found = True
+        break
+
+if found:
+    print("Item found!")
+else:
+    print("Item not found.")
+```
+
+### Working with Nested Lists
+```python
+# Iterating through a matrix (2D list)
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+for row in matrix:
+    for element in row:
+        print(element, end=" ")
+    print()  # New line after each row
+```
+
+### Filtering with List Comprehension
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Get even numbers
+even_numbers = [n for n in numbers if n % 2 == 0]
+
+# Get squares of odd numbers
+odd_squares = [n**2 for n in numbers if n % 2 != 0]
+```
+
+## Best Practices
+
+1. **Use meaningful conditions**: Make your conditions clear and readable
+   ```python
+   # Better
+   if age >= 18:
+       print("Adult")
+   
+   # Less clear
+   if age > 17:
+       print("Adult")
+   ```
+
+2. **Avoid deep nesting**: Excessive nesting makes code hard to read
+   ```python
+   # Try to avoid code that looks like this:
+   if condition1:
+       if condition2:
+           if condition3:
+               # Code here
+   ```
+
+3. **Ensure loop termination**: Make sure your while loops will eventually end
+   ```python
+   # Always make sure there's a way for the condition to become False
+   counter = 0
+   while counter < max_value:
+       # Do something
+       counter += 1  # Don't forget this!
+   ```
+
+4. **Use else clause with loops appropriately**: It's useful for "completed without breaking" logic
+   ```python
+   for item in items:
+       if item == target:
+           print("Found it!")
+           break
+   else:
+       print("Not found in the collection")
+   ```
+
+5. **Use enumerate() instead of manual indexing**: It's more Pythonic and less error-prone
+   ```python
+   # Better
+   for i, item in enumerate(items):
+       print(f"{i}: {item}")
+   
+   # Less Pythonic
+   for i in range(len(items)):
+       print(f"{i}: {items[i]}")
+   ```
+
+Remember that control flow is about directing the path your program takes. Well-structured control flow makes your code more readable, maintainable, and efficient.
