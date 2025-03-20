@@ -30,14 +30,13 @@ The curriculum is structured as a "journey" through five realms of Python knowle
    - Introduction to Python and its applications
    - Setting up the environment (focused on Jupyter/Colab)
    - Basic syntax and interactive shell
-   - Variables and primitive data types
-   - Simple input/output operations
+   - Variables and primitive data types and Simple input/output operations
 
 2. **Module 2: Control Flow Basics**
    - Conditional statements (if-elif-else)
    - Loops (for and while)
    - Basic error handling
-   - Simple algorithms and problem-solving
+   - Lists and Operations
 
 3. **Module 3: Functions and Modularity**
    - Defining and calling functions
@@ -234,12 +233,12 @@ All materials are designed as:
 
 1. Clone this repository:
    ```bash
-   (https://github.com/Kayariyan28/Python-Learn.git)
+   git clone https://github.com/Kayariyan28/Python-Learn.git
    ```
 
 2. Navigate to the first realm:
    ```bash
-   cd Python-Learn/Module 1
+   cd Python-Learn/realm_1
    ```
 
 3. Open the notebooks in Jupyter or upload to Google Colab to begin your journey.
