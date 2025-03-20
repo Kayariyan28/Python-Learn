@@ -6,6 +6,10 @@
 @Author: Karan Chandra Dey
 MailID: karandey3@outlook.com
 Linkedin: https://www.linkedin.com/in/karan-chandra-dey-23392b1b9 
+
+## Your AI Python Companion in this journey (CustomGPT specially designed for this course): 
+https://chatgpt.com/g/g-67dc6e60bba48191a9b65505d023dacf-pytutorgpt
+
 ## 🚀 Overview
 
 **Python Journey** is a comprehensive, multi-level Python curriculum that combines structured learning with gamification principles and experiential learning. The curriculum is designed to be accessible across all ages, with specific adaptations for children, teenagers, and adults.
