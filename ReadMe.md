@@ -1,4 +1,4 @@
-# Python Journey: A Python Curriculum for All Ages
+# Python Learn Journey: A Python Curriculum for All Ages
 
 ![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
